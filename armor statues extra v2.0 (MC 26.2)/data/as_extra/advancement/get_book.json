@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "as_extra_book": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:written_book"],
+            "predicates": {
+              "minecraft:written_book_content": {
+                "title": "StatuesExtra"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["as_extra_book"]],
+  "rewards": {
+    "function": "as_extra:craft_book"
+  }
+}

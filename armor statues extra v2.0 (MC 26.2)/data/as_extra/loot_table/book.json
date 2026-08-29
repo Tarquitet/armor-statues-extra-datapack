@@ -1,0 +1,239 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:written_book_content": {
+                  "title": "StatuesExtra V1.0",
+                  "author": "Tarquitet_2002"
+                },
+                "minecraft:custom_data": {
+                  "datapack": "ArmorStatuesV2"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_written_book_pages",
+              "pages": [
+                [
+                  { "text": " ", "color": "white" },
+                  { "text": "StatuesExtra V1.0", "color": "dark_blue" },
+                  { "text": " ", "color": "white" },
+                  {
+                    "text": "\u24be",
+                    "color": "dark_purple",
+                    "hover_event": {
+                      "action": "show_text",
+                      "value": [
+                        {
+                          "text": "Advanced armor stand customization addon\nfor Vanilla Tweaks Armor Statues.",
+                          "color": "yellow"
+                        }
+                      ]
+                    }
+                  },
+                  { "text": "\n\n  Table of Contents", "color": "black" },
+                  { "text": "\n", "color": "white" },
+                  { "text": "\nSettings", "color": "dark_aqua", "click_event": { "action": "change_page", "page": 2 } },
+                  { "text": "\nCredits", "color": "dark_aqua", "click_event": { "action": "change_page", "page": 3 } },
+                  { "text": "\n\n", "color": "white" },
+                  { "text": " IMPORTANT:", "color": "dark_red" },
+                  { "text": " ", "color": "white" },
+                  {
+                    "text": "\u24be",
+                    "color": "dark_purple",
+                    "hover_event": {
+                      "action": "show_text",
+                      "value": [
+                        {
+                          "text": "CRITICAL: You must turn OFF all\nextra features before using the\nVanilla Tweaks book to edit poses!",
+                          "color": "red"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "text": "\nThis is a datapack book with some options from Armorstands Mod by Roundaround.",
+                    "color": "black"
+                  }
+                ],
+                [
+                  "",
+                  { "text": "\u00ab", "color": "light_purple", "click_event": { "action": "change_page", "page": 1 } },
+                  { "text": " ", "color": "white" },
+                  { "text": "Extra Settings", "color": "dark_blue" },
+                  { "text": " ", "color": "white" },
+                  {
+                    "text": "\u24be",
+                    "color": "dark_purple",
+                    "hover_event": {
+                      "action": "show_text",
+                      "value": [
+                        {
+                          "text": "Target an armor stand within 3 blocks.\n\nFeatures:\n• Invulnerability + Slot Lock\n• Mace Shield Protection\n• Size Scale (0.5 - 3.0)",
+                          "color": "yellow"
+                        }
+                      ]
+                    }
+                  },
+                  { "text": "\n\n Invulnerability", "color": "black" },
+                  { "text": " ", "color": "white" },
+                  {
+                    "text": "\u24be",
+                    "color": "dark_purple",
+                    "hover_event": {
+                      "action": "show_text",
+                      "value": [
+                        {
+                          "text": "Makes the armor stand immune to all damage.\nAlso locks equipment slots to prevent\nplayers from taking or swapping items.",
+                          "color": "yellow"
+                        }
+                      ]
+                    }
+                  },
+                  { "text": "\n", "color": "white" },
+                  {
+                    "text": "ON",
+                    "color": "dark_green",
+                    "click_event": { "action": "run_command", "command": "trigger extra_trigger set 1" }
+                  },
+                  { "text": " / ", "color": "gray" },
+                  {
+                    "text": "OFF",
+                    "color": "red",
+                    "click_event": { "action": "run_command", "command": "trigger extra_trigger set 2" }
+                  },
+                  { "text": "\n\n\u26a1 Mace Shield", "color": "black" },
+                  { "text": " ", "color": "white" },
+                  {
+                    "text": "\u24be",
+                    "color": "dark_purple",
+                    "hover_event": {
+                      "action": "show_text",
+                      "value": [
+                        {
+                          "text": "Spawns an invisible villager to absorb\nMace smash attacks and trigger Wind Burst.\nPrevents pose breaking/shifting.\n\nUse with Invulnerability ON.",
+                          "color": "yellow"
+                        }
+                      ]
+                    }
+                  },
+                  { "text": "\n", "color": "white" },
+                  {
+                    "text": "ON",
+                    "color": "dark_green",
+                    "click_event": { "action": "run_command", "command": "trigger extra_trigger set 3" }
+                  },
+                  { "text": " / ", "color": "gray" },
+                  {
+                    "text": "OFF",
+                    "color": "red",
+                    "click_event": { "action": "run_command", "command": "trigger extra_trigger set 4" }
+                  },
+                  { "text": "\n\n\u2696 Size Scale", "color": "black" },
+                  { "text": " ", "color": "white" },
+                  {
+                    "text": "\u24be",
+                    "color": "dark_purple",
+                    "hover_event": {
+                      "action": "show_text",
+                      "value": [
+                        {
+                          "text": "Set armor stand size instantly.\n\n⚠ WARNING: Do NOT use with\nMace Shield active!\nTurn OFF Mace Shield first,\nthen adjust size.",
+                          "color": "red"
+                        }
+                      ]
+                    }
+                  },
+                  { "text": "\nQuick Select:\n", "color": "gray" },
+                  {
+                    "text": "[0.5]",
+                    "color": "blue",
+                    "click_event": { "action": "run_command", "command": "trigger extra_trigger set 10" }
+                  },
+                  { "text": " ", "color": "white" },
+                  {
+                    "text": "[1.0]",
+                    "color": "blue",
+                    "click_event": { "action": "run_command", "command": "trigger extra_trigger set 20" }
+                  },
+                  { "text": " ", "color": "white" },
+                  {
+                    "text": "[1.5]",
+                    "color": "blue",
+                    "click_event": { "action": "run_command", "command": "trigger extra_trigger set 30" }
+                  },
+                  { "text": "\n", "color": "white" },
+                  {
+                    "text": "[2.0]",
+                    "color": "blue",
+                    "click_event": { "action": "run_command", "command": "trigger extra_trigger set 40" }
+                  },
+                  { "text": " ", "color": "white" },
+                  {
+                    "text": "[2.5]",
+                    "color": "blue",
+                    "click_event": { "action": "run_command", "command": "trigger extra_trigger set 50" }
+                  },
+                  { "text": " ", "color": "white" },
+                  {
+                    "text": "[3.0]",
+                    "color": "blue",
+                    "click_event": { "action": "run_command", "command": "trigger extra_trigger set 60" }
+                  }
+                ],
+                [
+                  "",
+                  { "text": "\u00ab", "color": "light_purple", "click_event": { "action": "change_page", "page": 1 } },
+                  { "text": " ", "color": "white" },
+                  { "text": "Credits & Links", "color": "dark_blue" },
+                  { "text": " ", "color": "white" },
+                  {
+                    "text": "\u24be",
+                    "color": "dark_purple",
+                    "hover_event": {
+                      "action": "show_text",
+                      "value": [{ "text": "Click on names to visit their pages.", "color": "yellow" }]
+                    }
+                  },
+                  { "text": "\n\n  Datapack by", "color": "black" },
+                  { "text": "\n  ", "color": "white" },
+                  {
+                    "text": "Tarquitet_2002",
+                    "color": "#FF6B6B",
+                    "underlined": true,
+                    "click_event": { "action": "open_url", "url": "https://youtube.com/@tarquitet" }
+                  },
+                  { "text": "\n\n  Based on ArmorStands mod by", "color": "black" },
+                  { "text": "\n  ", "color": "white" },
+                  {
+                    "text": "Roundaround",
+                    "color": "#0072e5",
+                    "underlined": true,
+                    "click_event": { "action": "open_url", "url": "https://modrinth.com/mod/armor-stands" }
+                  },
+                  { "text": "\n\n  Core System by", "color": "black" },
+                  { "text": "\n  ", "color": "white" },
+                  {
+                    "text": "Vanilla Tweaks",
+                    "color": "#81bfdc",
+                    "underlined": true,
+                    "click_event": { "action": "open_url", "url": "https://vanillatweaks.net/" }
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
