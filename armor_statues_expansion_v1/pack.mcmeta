@@ -1,0 +1,20 @@
+{
+  "pack": {
+    "description": [
+      {
+        "text": "VT",
+        "color": "gold"
+      },
+      {
+        "text": " Armor Statues Extra",
+        "color": "yellow"
+      },
+      {
+        "text": "\nBuiltechraft",
+        "color": "blue"
+      }
+    ],
+    "min_format": 100,
+    "max_format": 110
+  }
+}
