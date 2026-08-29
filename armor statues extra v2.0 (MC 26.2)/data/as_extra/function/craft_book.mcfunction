@@ -1,0 +1,1 @@
+tag @s add as_extra_craft
